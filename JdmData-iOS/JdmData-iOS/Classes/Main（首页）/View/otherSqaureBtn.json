@@ -1,0 +1,33 @@
+[
+ {
+    "name": " 敲到",
+    "icon": "home_ico_inquiry",
+    "url": "tabbar_home"
+ },
+ {
+ "name": "装应用",
+ "icon": "home_ico_give",
+ "url": "tabbar_home"
+ }
+ ,
+ {
+ "name": "流量活动",
+ "icon": "home_ico_friend",
+ "url": "tabbar_home"
+ } ,
+ {
+ "name": "公众号",
+ "icon": "home_ico_shop",
+ "url": "tabbar_home"
+ },
+ {
+ "name": "猜一猜",
+ "icon": "home_ico_redbag",
+ "url": "tabbar_home"
+ },
+ {
+ "name": "看视频",
+ "icon": "home_ico_coupon",
+ "url": "tabbar_home"
+ },
+ ]

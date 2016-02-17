@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  JdmData-iOS
+//
+//  Created by wJDM on 15/11/10.
+//  Copyright © 2015年 jdmdata. All rights reserved.
+//
+
+
+#ifndef _________PrefixHeader_pch
+#define _________PrefixHeader_pch
+
+/** 日志输出 */
+#ifdef DEBUG // 开发
+#define JDMLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define JDMLog(...)
+#endif
+
+#define JDMLogFunc JDMLog(@"%s", __func__)
+
+/** self的弱引用 */
+#define JDMWeakSelf __weak typeof(self) weakSelf = self;
+
+/** 屏幕尺寸 */
+#define JDMScreenW [UIScreen mainScreen].bounds.size.width
+#define JDMScreenH [UIScreen mainScreen].bounds.size.height
+#define JDMScreenBounds [UIScreen mainScreen].bounds
+
+/** 颜色 */
+
+#define JDMColor(rgbValue)  [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define JDMRGBColor(r, g, b , a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define JDMGlobalBg JDMColor(215, 215, 215)
+#define JDMRandomColor JDMColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define JDMTagBgColor JDMColor(56, 116, 201)
+
+/** 获得导航栏最大的Y值 */
+#define JDMNavigationBarMaxY 64
+
+#import "UIBarButtonItem+JDMExtension.h"
+#import "UIView+JDMExtension.h"
+#import "JDMConst.h"
+#import "UIImage+purityImage.h"
+#import "UITabBar+badge.h"
+#import "JDMTools.h"
+//#import "BadgeView.h"
+//#import "UIImage+JDMExtension.h"
+//#import "UIImageView+JDMExtension.h"
+
+#endif

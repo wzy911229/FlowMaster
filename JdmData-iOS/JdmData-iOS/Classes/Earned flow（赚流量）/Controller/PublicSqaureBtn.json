@@ -1,0 +1,24 @@
+
+ [
+  {
+  "name": "点击抢流量复制公众号名称",
+  "icon": "make_icon_gzh01",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "在微信内粘贴并关注公众号",
+  "icon": "make_icon_gzh02",
+  "url": "tabbar_home"
+  }
+  ,
+  {
+  "name": "公众号内回复抢流量",
+  "icon": "make_icon_gzh03",
+  "url": "tabbar_home"
+  } ,
+  {
+  "name": "输入手机号获得G币",
+  "icon": "make_icon_gzh04",
+  "url": "tabbar_home"
+  },
+  ]

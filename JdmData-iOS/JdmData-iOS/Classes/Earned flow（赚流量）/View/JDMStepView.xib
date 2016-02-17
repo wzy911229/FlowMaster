@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="619" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赚流量步骤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-qn-E3h">
+                    <rect key="frame" x="25" y="15" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPf-ZH-RlI">
+                    <rect key="frame" x="20" y="41" width="137" height="99"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="make_icon_gzh01" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-lh-gdj">
+                            <rect key="frame" x="44" y="10" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="点击抢流量复制公众号名称" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elP-p2-vFW">
+                            <rect key="frame" x="0.0" y="70" width="137" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="elP-p2-vFW" firstAttribute="top" secondItem="o3U-lh-gdj" secondAttribute="bottom" constant="10" id="3zR-je-HpY"/>
+                        <constraint firstItem="elP-p2-vFW" firstAttribute="centerX" secondItem="o3U-lh-gdj" secondAttribute="centerX" id="9BH-fe-XnK"/>
+                        <constraint firstItem="o3U-lh-gdj" firstAttribute="top" secondItem="vPf-ZH-RlI" secondAttribute="top" constant="10" id="Wt2-gZ-08P"/>
+                        <constraint firstAttribute="trailing" secondItem="elP-p2-vFW" secondAttribute="trailing" id="Xjz-Iu-0Hn"/>
+                        <constraint firstItem="o3U-lh-gdj" firstAttribute="centerX" secondItem="vPf-ZH-RlI" secondAttribute="centerX" id="b1g-Hq-kUm"/>
+                        <constraint firstItem="elP-p2-vFW" firstAttribute="leading" secondItem="vPf-ZH-RlI" secondAttribute="leading" id="bds-H7-FgD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSA-tQ-JUq">
+                    <rect key="frame" x="167" y="41" width="138" height="99"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_icon_gzh02" translatesAutoresizingMaskIntoConstraints="NO" id="zek-0x-2Xq">
+                            <rect key="frame" x="44" y="10" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在微信内捏贴并关注" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAs-JE-o0D">
+                            <rect key="frame" x="0.0" y="70" width="138" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NAs-JE-o0D" firstAttribute="leading" secondItem="hSA-tQ-JUq" secondAttribute="leading" id="FRI-9x-cKL"/>
+                        <constraint firstItem="zek-0x-2Xq" firstAttribute="top" secondItem="hSA-tQ-JUq" secondAttribute="top" constant="10" id="JYD-mb-bB3"/>
+                        <constraint firstItem="NAs-JE-o0D" firstAttribute="top" secondItem="zek-0x-2Xq" secondAttribute="bottom" constant="10" id="Ms8-O7-cXE"/>
+                        <constraint firstItem="zek-0x-2Xq" firstAttribute="centerX" secondItem="hSA-tQ-JUq" secondAttribute="centerX" id="RQK-kb-v7T"/>
+                        <constraint firstItem="NAs-JE-o0D" firstAttribute="centerX" secondItem="zek-0x-2Xq" secondAttribute="centerX" id="fT4-Hs-MYq"/>
+                        <constraint firstAttribute="trailing" secondItem="NAs-JE-o0D" secondAttribute="trailing" id="r3Q-sr-MZo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-t9-iBA">
+                    <rect key="frame" x="462" y="41" width="137" height="99"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入手机号的G币" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-9r-bND">
+                            <rect key="frame" x="0.0" y="70" width="137" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_icon_gzh04" translatesAutoresizingMaskIntoConstraints="NO" id="rPo-00-zZg">
+                            <rect key="frame" x="43" y="10" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rPo-00-zZg" firstAttribute="centerX" secondItem="G7e-t9-iBA" secondAttribute="centerX" id="NyT-8j-DW2"/>
+                        <constraint firstItem="rPo-00-zZg" firstAttribute="top" secondItem="G7e-t9-iBA" secondAttribute="top" constant="10" id="Rc2-Kq-0OX"/>
+                        <constraint firstAttribute="trailing" secondItem="xVd-9r-bND" secondAttribute="trailing" id="TNc-tU-ogp"/>
+                        <constraint firstItem="xVd-9r-bND" firstAttribute="top" secondItem="rPo-00-zZg" secondAttribute="bottom" constant="10" id="YO8-Fi-2pa"/>
+                        <constraint firstItem="xVd-9r-bND" firstAttribute="leading" secondItem="G7e-t9-iBA" secondAttribute="leading" id="cqY-i9-kwY"/>
+                        <constraint firstItem="xVd-9r-bND" firstAttribute="centerX" secondItem="rPo-00-zZg" secondAttribute="centerX" id="njj-c7-t4Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIL-HP-xfI">
+                    <rect key="frame" x="315" y="41" width="137" height="99"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公众号内回复抢流量" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-WD-Hm0">
+                            <rect key="frame" x="0.0" y="70" width="137" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_icon_gzh03" translatesAutoresizingMaskIntoConstraints="NO" id="DXd-cI-3pW">
+                            <rect key="frame" x="43" y="10" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Zcf-WD-Hm0" secondAttribute="trailing" id="5dm-gw-fNx"/>
+                        <constraint firstItem="Zcf-WD-Hm0" firstAttribute="leading" secondItem="qIL-HP-xfI" secondAttribute="leading" id="5h6-qa-aks"/>
+                        <constraint firstItem="Zcf-WD-Hm0" firstAttribute="centerX" secondItem="DXd-cI-3pW" secondAttribute="centerX" id="M2P-LK-YbJ"/>
+                        <constraint firstItem="Zcf-WD-Hm0" firstAttribute="top" secondItem="DXd-cI-3pW" secondAttribute="bottom" constant="10" id="T7S-6g-yHM"/>
+                        <constraint firstItem="DXd-cI-3pW" firstAttribute="centerX" secondItem="qIL-HP-xfI" secondAttribute="centerX" id="fhG-6d-32L"/>
+                        <constraint firstItem="DXd-cI-3pW" firstAttribute="top" secondItem="qIL-HP-xfI" secondAttribute="top" constant="10" id="tMf-mh-AaQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TlH-qn-E3h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="2AF-gq-RZQ"/>
+                <constraint firstItem="hSA-tQ-JUq" firstAttribute="leading" secondItem="vPf-ZH-RlI" secondAttribute="trailing" constant="10" id="5tz-Y2-B4u"/>
+                <constraint firstItem="qIL-HP-xfI" firstAttribute="width" secondItem="hSA-tQ-JUq" secondAttribute="width" id="7Ts-fr-9hF"/>
+                <constraint firstItem="vPf-ZH-RlI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="AHI-uY-flO"/>
+                <constraint firstItem="vPf-ZH-RlI" firstAttribute="width" secondItem="hSA-tQ-JUq" secondAttribute="width" id="AvK-ER-J2X"/>
+                <constraint firstItem="hSA-tQ-JUq" firstAttribute="top" secondItem="vPf-ZH-RlI" secondAttribute="top" id="CKz-Nh-RCG"/>
+                <constraint firstItem="qIL-HP-xfI" firstAttribute="bottom" secondItem="hSA-tQ-JUq" secondAttribute="bottom" id="CdI-qc-3DH"/>
+                <constraint firstItem="G7e-t9-iBA" firstAttribute="top" secondItem="qIL-HP-xfI" secondAttribute="top" id="FQn-TB-RpR"/>
+                <constraint firstItem="G7e-t9-iBA" firstAttribute="width" secondItem="qIL-HP-xfI" secondAttribute="width" id="HmV-hV-Y6G"/>
+                <constraint firstItem="qIL-HP-xfI" firstAttribute="top" secondItem="hSA-tQ-JUq" secondAttribute="top" id="aH4-Vq-RY1"/>
+                <constraint firstAttribute="bottom" secondItem="vPf-ZH-RlI" secondAttribute="bottom" constant="20" id="byb-dO-5j9"/>
+                <constraint firstItem="G7e-t9-iBA" firstAttribute="bottom" secondItem="qIL-HP-xfI" secondAttribute="bottom" id="cr6-Qu-qkq"/>
+                <constraint firstItem="G7e-t9-iBA" firstAttribute="leading" secondItem="qIL-HP-xfI" secondAttribute="trailing" constant="10" id="dyd-sP-bNu"/>
+                <constraint firstAttribute="trailing" secondItem="G7e-t9-iBA" secondAttribute="trailing" constant="20" id="e53-sh-WxK"/>
+                <constraint firstItem="hSA-tQ-JUq" firstAttribute="bottom" secondItem="vPf-ZH-RlI" secondAttribute="bottom" id="et2-XM-nLM"/>
+                <constraint firstItem="qIL-HP-xfI" firstAttribute="leading" secondItem="hSA-tQ-JUq" secondAttribute="trailing" constant="10" id="hjb-ER-CAm"/>
+                <constraint firstItem="TlH-qn-E3h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="qee-QH-d4H"/>
+                <constraint firstItem="vPf-ZH-RlI" firstAttribute="top" secondItem="TlH-qn-E3h" secondAttribute="bottom" constant="5" id="td1-UX-Mgt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="490.5" y="168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="make_icon_gzh01" width="50" height="50"/>
+        <image name="make_icon_gzh02" width="50" height="50"/>
+        <image name="make_icon_gzh03" width="50" height="50"/>
+        <image name="make_icon_gzh04" width="50" height="50"/>
+    </resources>
+</document>

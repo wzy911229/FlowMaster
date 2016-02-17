@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JDMHUBView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="696"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-Ue-YHR" userLabel="blackView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GJ-TU-BAP">
+                    <rect key="frame" x="0.0" y="559" width="375" height="137"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-2w-NQ8">
+                            <rect key="frame" x="213" y="67" width="132" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="mwH-Z6-eZ2"/>
+                            </constraints>
+                            <state key="normal" title="设置">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickSetBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="DfP-yT-xs5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al0-Cz-VdQ">
+                            <rect key="frame" x="30" y="67" width="133" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Phg-q0-s3p"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
+                            <state key="normal" title="取消" backgroundImage="FollowBtnBg">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickCancleBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="e0u-wL-OZF"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0y-xf-gud">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未设置流量套餐详情,立即设置吗?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heC-e3-u4u">
+                                    <rect key="frame" x="0.0" y="23" width="375" height="22"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="heC-e3-u4u" firstAttribute="leading" secondItem="m0y-xf-gud" secondAttribute="leading" id="8By-0r-7yB"/>
+                                <constraint firstAttribute="trailing" secondItem="heC-e3-u4u" secondAttribute="trailing" id="G89-IU-qoN"/>
+                                <constraint firstItem="heC-e3-u4u" firstAttribute="centerY" secondItem="m0y-xf-gud" secondAttribute="centerY" id="cDf-ab-ZcO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="uUv-2w-NQ8" firstAttribute="leading" secondItem="al0-Cz-VdQ" secondAttribute="trailing" constant="50" id="Dgl-kG-cwg"/>
+                        <constraint firstItem="uUv-2w-NQ8" firstAttribute="top" secondItem="al0-Cz-VdQ" secondAttribute="top" id="Dh4-0I-IC9"/>
+                        <constraint firstItem="m0y-xf-gud" firstAttribute="leading" secondItem="7GJ-TU-BAP" secondAttribute="leading" id="QZw-gZ-eqD"/>
+                        <constraint firstItem="m0y-xf-gud" firstAttribute="top" secondItem="7GJ-TU-BAP" secondAttribute="top" id="YFo-IW-3NP"/>
+                        <constraint firstItem="al0-Cz-VdQ" firstAttribute="top" secondItem="m0y-xf-gud" secondAttribute="bottom" id="Z0a-GB-Gzx"/>
+                        <constraint firstAttribute="bottom" secondItem="al0-Cz-VdQ" secondAttribute="bottom" constant="26" id="ePh-RE-i4k"/>
+                        <constraint firstAttribute="height" constant="137" id="h3Y-Jc-hBE"/>
+                        <constraint firstAttribute="trailing" secondItem="uUv-2w-NQ8" secondAttribute="trailing" constant="30" id="jiG-T5-1bo"/>
+                        <constraint firstAttribute="trailing" secondItem="m0y-xf-gud" secondAttribute="trailing" id="pSa-NR-BOw"/>
+                        <constraint firstItem="al0-Cz-VdQ" firstAttribute="leading" secondItem="7GJ-TU-BAP" secondAttribute="leading" constant="30" id="pd6-Ze-eoT"/>
+                        <constraint firstItem="al0-Cz-VdQ" firstAttribute="width" secondItem="uUv-2w-NQ8" secondAttribute="width" id="ub8-dJ-LkY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7GJ-TU-BAP" secondAttribute="bottom" id="04X-Qh-Pm6"/>
+                <constraint firstAttribute="trailing" secondItem="7GJ-TU-BAP" secondAttribute="trailing" id="Gdp-ys-t5W"/>
+                <constraint firstAttribute="trailing" secondItem="oJG-Ue-YHR" secondAttribute="trailing" id="LgK-C1-sqR"/>
+                <constraint firstItem="oJG-Ue-YHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T1t-Ix-eTG"/>
+                <constraint firstItem="oJG-Ue-YHR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dS3-7Q-dBh"/>
+                <constraint firstItem="7GJ-TU-BAP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m86-rC-od2"/>
+                <constraint firstItem="7GJ-TU-BAP" firstAttribute="top" secondItem="oJG-Ue-YHR" secondAttribute="bottom" id="t2z-ba-okd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="awakeLabel" destination="heC-e3-u4u" id="GLx-jq-Iz7"/>
+            </connections>
+            <point key="canvasLocation" x="290.5" y="195"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+    </resources>
+</document>

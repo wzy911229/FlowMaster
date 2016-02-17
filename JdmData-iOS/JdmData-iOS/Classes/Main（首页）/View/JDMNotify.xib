@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JDMNotify">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-Zb-a9O" userLabel="消息label">
+                    <rect key="frame" x="309" y="0.0" width="0.0" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJe-w2-jrA">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg6-2k-WZl">
+                            <rect key="frame" x="8" y="9" width="14" height="22"/>
+                            <state key="normal" image="make_icon_gb"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Eg6-2k-WZl" firstAttribute="centerY" secondItem="JJe-w2-jrA" secondAttribute="centerY" id="Efk-Ex-JWK"/>
+                        <constraint firstItem="Eg6-2k-WZl" firstAttribute="centerX" secondItem="JJe-w2-jrA" secondAttribute="centerX" id="Mom-Y8-w2t"/>
+                        <constraint firstAttribute="width" constant="30" id="w8G-oN-63l"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW0-Pu-LSS" userLabel="取消View">
+                    <rect key="frame" x="309" y="0.0" width="30" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh8-NP-gkD" userLabel="cancle">
+                            <rect key="frame" x="-2" y="2" width="35" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="eh8-NP-gkD" secondAttribute="height" multiplier="1:1" id="dqB-8m-ydt"/>
+                            </constraints>
+                            <state key="normal" image="cancel"/>
+                            <connections>
+                                <action selector="clickCancleButton" destination="iN0-l3-epB" eventType="touchUpInside" id="3WL-G3-mVn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eh8-NP-gkD" firstAttribute="centerX" secondItem="wW0-Pu-LSS" secondAttribute="centerX" id="5yC-6L-mrH"/>
+                        <constraint firstItem="eh8-NP-gkD" firstAttribute="centerY" secondItem="wW0-Pu-LSS" secondAttribute="centerY" id="Bcq-Aj-XWf"/>
+                        <constraint firstAttribute="width" constant="30" id="JA2-A8-pPb"/>
+                        <constraint firstItem="eh8-NP-gkD" firstAttribute="top" secondItem="wW0-Pu-LSS" secondAttribute="top" constant="2" id="ieq-2h-QhD"/>
+                        <constraint firstAttribute="bottom" secondItem="eh8-NP-gkD" secondAttribute="bottom" constant="2" id="zOv-vK-PIh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Bcq-Aj-XWf"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.72956189569999996" green="0.93824519340000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JJe-w2-jrA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ERf-jg-WKo"/>
+                <constraint firstItem="JJe-w2-jrA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F7z-RN-0na"/>
+                <constraint firstItem="JJe-w2-jrA" firstAttribute="width" secondItem="wW0-Pu-LSS" secondAttribute="width" id="LXe-Zc-FSU"/>
+                <constraint firstAttribute="trailing" secondItem="wW0-Pu-LSS" secondAttribute="trailing" id="Pov-OY-mWp"/>
+                <constraint firstItem="wW0-Pu-LSS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Uxc-kn-alf"/>
+                <constraint firstItem="Oj4-Zb-a9O" firstAttribute="leading" secondItem="wW0-Pu-LSS" secondAttribute="leading" id="d7n-aK-shE"/>
+                <constraint firstAttribute="bottom" secondItem="JJe-w2-jrA" secondAttribute="bottom" id="gQz-YF-3Y2"/>
+                <constraint firstAttribute="bottom" secondItem="wW0-Pu-LSS" secondAttribute="bottom" id="l3f-mk-4Ge"/>
+                <constraint firstItem="Oj4-Zb-a9O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sTs-ZI-NfX"/>
+                <constraint firstAttribute="bottom" secondItem="Oj4-Zb-a9O" secondAttribute="bottom" id="uAf-gB-1wG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelLayout" destination="d7n-aK-shE" id="zoW-oB-IGn"/>
+                <outlet property="notify" destination="Oj4-Zb-a9O" id="Emw-ZL-qie"/>
+                <outlet property="view" destination="JJe-w2-jrA" id="zgx-Hk-POa"/>
+            </connections>
+            <point key="canvasLocation" x="367.5" y="108.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="26" height="26"/>
+        <image name="make_icon_gb" width="14" height="14"/>
+    </resources>
+</document>

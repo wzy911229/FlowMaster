@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JDMSinginViewController">
+            <connections>
+                <outlet property="singSwitch" destination="CmS-H9-y7e" id="oC4-JA-Td8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="555"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redbag_containerbg" translatesAutoresizingMaskIntoConstraints="NO" id="elp-xq-BcP">
+                    <rect key="frame" x="0.0" y="44" width="352" height="283"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-QD-fA9">
+                    <rect key="frame" x="104" y="337" width="144" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="Bre-vk-tk2"/>
+                        <constraint firstAttribute="height" constant="35" id="X4h-lt-ajw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="马上签到" backgroundImage="redbag_btn_qd">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSignBtn:" destination="-1" eventType="touchUpInside" id="hWr-vm-NCf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw0-pA-OkL">
+                    <rect key="frame" x="104" y="387" width="144" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="0TJ-Hj-LhL"/>
+                        <constraint firstAttribute="width" constant="144" id="0VB-Nj-5yZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="兑换" backgroundImage="redbag_btn_dh"/>
+                    <connections>
+                        <action selector="clickexChangeBtn:" destination="-1" eventType="touchUpInside" id="XWu-tE-s3Z"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redbag_bottombg" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-nz-URX">
+                    <rect key="frame" x="0.0" y="480" width="352" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="xzh-hM-4Jd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注:该活动最终解释权归精迪敏所有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qm-lm-Noh">
+                    <rect key="frame" x="53" y="435" width="245" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-H9-y7e">
+                    <rect key="frame" x="258" y="509" width="51" height="31"/>
+                    <color key="onTintColor" red="1" green="0.65490196079999996" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                </switch>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redbag_icon_nz" translatesAutoresizingMaskIntoConstraints="NO" id="aSM-BH-Om3">
+                    <rect key="frame" x="71" y="515" width="18" height="18"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天提醒我来签到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so3-MS-3Ik">
+                    <rect key="frame" x="104" y="513" width="144" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.45176295230263158" blue="0.43092105263157893" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="elp-xq-BcP" secondAttribute="trailing" id="M0Y-eP-v0Z"/>
+                <constraint firstItem="so3-MS-3Ik" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Map-FG-YgZ"/>
+                <constraint firstItem="Sw0-pA-OkL" firstAttribute="top" secondItem="jmj-QD-fA9" secondAttribute="bottom" constant="15" id="UTk-i5-yOE"/>
+                <constraint firstItem="elp-xq-BcP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="WXV-ok-5KK"/>
+                <constraint firstItem="Zcv-nz-URX" firstAttribute="top" secondItem="Sw0-pA-OkL" secondAttribute="bottom" constant="60" id="YZB-I5-Idy"/>
+                <constraint firstItem="elp-xq-BcP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aKl-1k-hwh"/>
+                <constraint firstItem="0qm-lm-Noh" firstAttribute="centerX" secondItem="Sw0-pA-OkL" secondAttribute="centerX" id="aQr-sE-BsQ"/>
+                <constraint firstItem="CmS-H9-y7e" firstAttribute="centerY" secondItem="so3-MS-3Ik" secondAttribute="centerY" id="acx-sK-7GX"/>
+                <constraint firstItem="Zcv-nz-URX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bd9-U5-Ubo"/>
+                <constraint firstItem="Sw0-pA-OkL" firstAttribute="centerX" secondItem="jmj-QD-fA9" secondAttribute="centerX" id="goH-wY-98H"/>
+                <constraint firstItem="jmj-QD-fA9" firstAttribute="centerX" secondItem="elp-xq-BcP" secondAttribute="centerX" id="jPg-Pn-r3d"/>
+                <constraint firstAttribute="bottom" secondItem="so3-MS-3Ik" secondAttribute="bottom" constant="20" id="pCM-9J-16c"/>
+                <constraint firstItem="jmj-QD-fA9" firstAttribute="top" secondItem="elp-xq-BcP" secondAttribute="bottom" constant="10" id="qRG-oo-tJy"/>
+                <constraint firstItem="CmS-H9-y7e" firstAttribute="leading" secondItem="so3-MS-3Ik" secondAttribute="trailing" constant="10" id="rdO-cG-IJO"/>
+                <constraint firstItem="0qm-lm-Noh" firstAttribute="top" secondItem="Sw0-pA-OkL" secondAttribute="bottom" constant="15" id="xPc-LT-eRT"/>
+                <constraint firstAttribute="trailing" secondItem="Zcv-nz-URX" secondAttribute="trailing" id="xeK-x3-nVh"/>
+                <constraint firstItem="so3-MS-3Ik" firstAttribute="leading" secondItem="aSM-BH-Om3" secondAttribute="trailing" constant="15" id="xuc-Li-gQW"/>
+                <constraint firstItem="aSM-BH-Om3" firstAttribute="centerY" secondItem="so3-MS-3Ik" secondAttribute="centerY" id="yhI-n7-vya"/>
+                <constraint firstAttribute="bottom" secondItem="Zcv-nz-URX" secondAttribute="bottom" id="zwV-Fj-7Ue"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-50" y="266.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="redbag_bottombg" width="375" height="81"/>
+        <image name="redbag_btn_dh" width="144" height="33"/>
+        <image name="redbag_btn_qd" width="144" height="33"/>
+        <image name="redbag_containerbg" width="375" height="393"/>
+        <image name="redbag_icon_nz" width="18" height="18"/>
+    </resources>
+</document>

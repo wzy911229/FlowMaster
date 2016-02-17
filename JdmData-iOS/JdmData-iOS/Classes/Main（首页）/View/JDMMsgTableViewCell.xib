@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="JDMMsgTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年11月28日 11:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb3-q5-zSp">
+                        <rect key="frame" x="96" y="10" width="129" height="16"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" image="chat_receiver_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OR8-m3-NNz">
+                        <rect key="frame" x="75" y="40" width="225" height="48"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZB-U9-ueu">
+                        <rect key="frame" x="85" y="42" width="205" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" image="my_icon_yixin" translatesAutoresizingMaskIntoConstraints="NO" id="DdZ-G9-n3j">
+                        <rect key="frame" x="15" y="39" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DdZ-G9-n3j" secondAttribute="height" multiplier="1:1" id="ZOz-QD-SmU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OR8-m3-NNz" secondAttribute="trailing" constant="20" id="6x5-7e-aHH"/>
+                    <constraint firstItem="DdZ-G9-n3j" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Jl-sm-quV"/>
+                    <constraint firstItem="kb3-q5-zSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8Aq-mb-jSH"/>
+                    <constraint firstItem="OR8-m3-NNz" firstAttribute="leading" secondItem="DdZ-G9-n3j" secondAttribute="trailing" constant="10" id="Fna-4x-zcX"/>
+                    <constraint firstItem="kb3-q5-zSp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LsF-TI-Dm7"/>
+                    <constraint firstItem="HZB-U9-ueu" firstAttribute="leading" secondItem="OR8-m3-NNz" secondAttribute="leading" constant="10" id="MFV-yl-VLO"/>
+                    <constraint firstItem="OR8-m3-NNz" firstAttribute="trailing" secondItem="HZB-U9-ueu" secondAttribute="trailing" constant="10" id="PZU-Hw-BPE"/>
+                    <constraint firstItem="OR8-m3-NNz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QBd-6j-FIj"/>
+                    <constraint firstItem="DdZ-G9-n3j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="S4e-NY-Cni"/>
+                    <constraint firstItem="HZB-U9-ueu" firstAttribute="top" secondItem="OR8-m3-NNz" secondAttribute="top" constant="2" id="aTv-qG-ggK"/>
+                    <constraint firstItem="HZB-U9-ueu" firstAttribute="bottom" secondItem="OR8-m3-NNz" secondAttribute="bottom" constant="-10" id="zM5-44-ZjD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="kb3-q5-zSp" id="hKp-dJ-gAb"/>
+                <outlet property="icon" destination="DdZ-G9-n3j" id="uWM-iD-Nd9"/>
+                <outlet property="msgLabel" destination="HZB-U9-ueu" id="3qw-GU-TT6"/>
+            </connections>
+            <point key="canvasLocation" x="-67" y="210.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_receiver_bg" width="39" height="40"/>
+        <image name="my_icon_yixin" width="30" height="30"/>
+    </resources>
+</document>

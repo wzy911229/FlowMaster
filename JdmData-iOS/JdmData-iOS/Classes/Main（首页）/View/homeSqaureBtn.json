@@ -1,0 +1,44 @@
+ [
+  {
+  "name": "查流量",
+  "icon": "home_ico_inquiry",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "赠流量",
+  "icon": "home_ico_give",
+  "url": "tabbar_home"
+  }
+  ,
+  {
+  "name": "流量圈",
+  "icon": "home_ico_friend",
+  "url": "tabbar_home"
+  } ,
+  {
+  "name": "商场",
+  "icon": "home_ico_shop",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "红包",
+  "icon": "home_ico_redbag",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "优惠劵",
+  "icon": "home_ico_coupon",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "兑换",
+  "icon": "home_ico_exchange",
+  "url": "tabbar_home"
+  },
+  {
+  "name": "签到",
+  "icon": "home_ico_sign",
+  "url": "tabbar_home"
+  },
+  ]
+

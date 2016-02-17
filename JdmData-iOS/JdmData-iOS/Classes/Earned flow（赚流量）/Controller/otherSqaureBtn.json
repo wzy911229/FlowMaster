@@ -1,0 +1,34 @@
+[
+ {
+    "name": "签到",
+    "icon": "earn_icon_qd",
+    "url": "tabbar_home"
+ },
+ {
+ "name": "装应用",
+ "icon": "earn_icon_zyy",
+ "url": "tabbar_home"
+ }
+ ,
+ {
+ "name": "流量活动",
+ "icon": "earn_icon_llhd",
+ "url": "tabbar_home"
+ } ,
+ {
+ "name": "公众号",
+ "icon": "earn_icon_gzh",
+ "url": "tabbar_home"
+ },
+ {
+ "name": "猜一猜",
+ "icon": "earn_icon_cyc",
+ "url": "tabbar_home"
+ },
+ {
+ "name": "看视频",
+ "icon": "earn_icon_ksp",
+ "url": "tabbar_home"
+ },
+
+ ]

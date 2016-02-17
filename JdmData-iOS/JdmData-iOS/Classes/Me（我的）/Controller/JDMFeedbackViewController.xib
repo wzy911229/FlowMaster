@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JDMFeedbackViewController">
+            <connections>
+                <outlet property="mailTextField" destination="rwE-Ot-VoX" id="PEJ-Fc-Gpk"/>
+                <outlet property="placeholderTextView" destination="SAG-LX-olU" id="bbA-Kf-J0O"/>
+                <outlet property="titleContentView" destination="uPJ-4a-nTi" id="qmt-xf-Epn"/>
+                <outlet property="titleLabel" destination="hJZ-VG-xN3" id="2xg-3H-bWl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPJ-4a-nTi">
+                    <rect key="frame" x="10" y="70" width="580" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提意见" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-VG-xN3">
+                            <rect key="frame" x="10" y="9" width="51" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRX-Aq-VEI">
+                            <rect key="frame" x="540" y="5" width="30" height="30"/>
+                            <state key="normal" title="切换"/>
+                            <connections>
+                                <action selector="clickChangeTitleButton" destination="-1" eventType="touchUpInside" id="4tp-gG-8b2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eRX-Aq-VEI" secondAttribute="trailing" constant="10" id="13b-Bo-oyK"/>
+                        <constraint firstItem="hJZ-VG-xN3" firstAttribute="leading" secondItem="uPJ-4a-nTi" secondAttribute="leading" constant="10" id="BM1-Uu-dhW"/>
+                        <constraint firstAttribute="height" constant="40" id="CZA-BI-DJp"/>
+                        <constraint firstItem="eRX-Aq-VEI" firstAttribute="centerY" secondItem="uPJ-4a-nTi" secondAttribute="centerY" id="edD-oG-2YK"/>
+                        <constraint firstItem="hJZ-VG-xN3" firstAttribute="centerY" secondItem="uPJ-4a-nTi" secondAttribute="centerY" id="pxV-8x-xd8"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="540825129@qq.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-Ot-VoX">
+                    <rect key="frame" x="10" y="263" width="580" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qEN-NO-QI8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl8-mk-WVF">
+                    <rect key="frame" x="10" y="323" width="580" height="34"/>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.57254901960000004" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="MOD-qL-CDU"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickCommitButton" destination="-1" eventType="touchUpInside" id="Rij-xs-TWY"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SAG-LX-olU" customClass="JDMPlaceholderTextView">
+                    <rect key="frame" x="10" y="122" width="580" height="133"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wl8-mk-WVF" firstAttribute="top" secondItem="rwE-Ot-VoX" secondAttribute="bottom" constant="20" id="Glb-qp-oy7"/>
+                <constraint firstItem="uPJ-4a-nTi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="I3S-TT-T2n"/>
+                <constraint firstAttribute="trailing" secondItem="wl8-mk-WVF" secondAttribute="trailing" constant="10" id="N62-8h-0MR"/>
+                <constraint firstItem="SAG-LX-olU" firstAttribute="top" secondItem="uPJ-4a-nTi" secondAttribute="bottom" constant="10" id="WVL-fE-yRS"/>
+                <constraint firstAttribute="trailing" secondItem="uPJ-4a-nTi" secondAttribute="trailing" constant="10" id="ZCF-Zd-4ML"/>
+                <constraint firstItem="wl8-mk-WVF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cX5-GU-Sib"/>
+                <constraint firstItem="rwE-Ot-VoX" firstAttribute="top" secondItem="SAG-LX-olU" secondAttribute="bottom" constant="10" id="fwI-SM-OgH"/>
+                <constraint firstAttribute="trailing" secondItem="SAG-LX-olU" secondAttribute="trailing" constant="10" id="gFG-Er-XKl"/>
+                <constraint firstItem="uPJ-4a-nTi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="jC7-cd-MTN"/>
+                <constraint firstAttribute="trailing" secondItem="rwE-Ot-VoX" secondAttribute="trailing" constant="10" id="jlB-7Q-1Yr"/>
+                <constraint firstItem="SAG-LX-olU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="nzp-hd-QZi"/>
+                <constraint firstItem="wl8-mk-WVF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="40" id="ooQ-GJ-ggl"/>
+                <constraint firstItem="rwE-Ot-VoX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="p09-Nv-NWs"/>
+                <constraint firstItem="wl8-mk-WVF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vbi-m1-wIg"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cer" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="324" y="89"/>
+        </view>
+    </objects>
+</document>

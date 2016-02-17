@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JDMAppViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="133"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="首次安装并注册账户获奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCN-ka-GBZ">
+                    <rect key="frame" x="20" y="1" width="154" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册账号并体验3分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIL-WF-dy7">
+                    <rect key="frame" x="20" y="23" width="135" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5K-8p-NyD">
+                    <rect key="frame" x="73" y="67" width="343" height="61"/>
+                    <state key="normal" title="下载应用" backgroundImage="my_btn_yqxx">
+                        <color key="titleColor" red="0.97630550989999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="必须确保您重未安装过此应用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-45-XKX">
+                    <rect key="frame" x="20" y="45" width="182" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.95669716279999995" green="0.18341385690000001" blue="0.082879317430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="U5K-8p-NyD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4zt-b4-Fga"/>
+                <constraint firstItem="rCN-ka-GBZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5mW-Ic-jnC"/>
+                <constraint firstItem="VOO-45-XKX" firstAttribute="leading" secondItem="LIL-WF-dy7" secondAttribute="leading" id="935-gF-5F3"/>
+                <constraint firstItem="LIL-WF-dy7" firstAttribute="top" secondItem="rCN-ka-GBZ" secondAttribute="bottom" constant="5" id="MHp-gc-PeV"/>
+                <constraint firstAttribute="bottom" secondItem="U5K-8p-NyD" secondAttribute="bottom" constant="5" id="cY6-eh-dw5"/>
+                <constraint firstItem="VOO-45-XKX" firstAttribute="top" secondItem="LIL-WF-dy7" secondAttribute="bottom" constant="5" id="fVR-2C-7p4"/>
+                <constraint firstItem="rCN-ka-GBZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="hp7-qR-8Pu"/>
+                <constraint firstItem="LIL-WF-dy7" firstAttribute="leading" secondItem="rCN-ka-GBZ" secondAttribute="leading" id="jd7-B0-VWP"/>
+                <constraint firstItem="U5K-8p-NyD" firstAttribute="top" secondItem="VOO-45-XKX" secondAttribute="bottom" constant="5" id="y3K-Cp-tj4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="317" y="208.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my_btn_yqxx" width="343" height="44"/>
+    </resources>
+</document>
